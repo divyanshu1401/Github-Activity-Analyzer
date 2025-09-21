@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # API routes
   namespace :api do
-    get 'github_activity/analyze', to: 'github_activity#analyze'
+    get "github_activity/analyze", to: "github_activity#analyze"
   end
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

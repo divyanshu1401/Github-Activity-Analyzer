@@ -1,10 +1,10 @@
 class Api::GithubActivityController < ApplicationController
   def analyze
     username = params[:username]
-    
+
     if username.blank?
-      render json: { 
-        error: "Username parameter is required" 
+      render json: {
+        error: "Username parameter is required"
       }, status: :bad_request
       return
     end
